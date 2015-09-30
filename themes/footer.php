@@ -1,0 +1,1 @@
+<div class="footer">© 2015 <?php echo $config['sitename'];?> Power by <a href="#"><?php echo $config['version'];?></a> <a href="/sitemap.xml">网站地图</a></div>

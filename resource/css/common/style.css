@@ -1,0 +1,22 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+body div{font-size:13px; font:"ËÎÌו"}
+.line10{width:auto;height:10px; overflow:hidden;}
+.line20{width:auto;height:20px; overflow:hidden;}

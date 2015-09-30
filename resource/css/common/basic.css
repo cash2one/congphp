@@ -1,0 +1,126 @@
+@charset "utf-8";
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    font-family: "微软雅黑", "宋体";
+    font-size: 12px;
+    background-color: #576600;
+}
+img {
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+a {
+    color: #FFF;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+a img {
+    border:solid 2px #576600;
+    text-decoration:none;
+}
+a img:hover{
+    border: solid 2px #FCC670;
+}
+ol,ul {list-style:none;}/* 去掉列表前的标识, li 会继承 */
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:500;}
+.jy_h_content {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+.jy_h_top {
+    background-image: url(/resource/images/jy_home/jy_01.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 264px;
+    position: relative;
+    width:960px;
+    margin: 0px auto;
+}
+.user_pic {
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    height: 80px;
+    width: 220px;
+}
+.user_pic dt a img {
+    border: 2px solid #FFF;
+}
+.jy_h_top_nav {
+    line-height: 30px;
+    height: 30px;
+    text-align: right;
+    color: #FFF;
+}
+
+.user_pic dt {
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+.user_pic dd {
+    float: left;
+    height: 22px;
+    padding-top: 30px;
+    padding-left: 10px;
+    line-height: 22px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cpath{
+    height: 30px;
+    line-height: 30px;
+}
+.cpath a{
+    color:#666;
+}
+.footer{
+    width:950px;
+    padding:5px;
+    margin:0px auto;
+}
+
+.clear:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clear{clear:both;zoom:1;font-size:0;height:0; /* for IE6 IE7 */}
+.btn{height:30px;line-height: 30px;background: #354059;color:#fff;border: 1px solid transparent;font-size:14px;cursor: pointer;border-radius: 3px;-webkit-appearance:none;padding: 0 10px 2px;}
+.btn:hover{color: #fff;text-decoration: none;border-color: #000;}
+.center{text-align:center;}
+/*结构*/
+#contain{width: 950px;margin: 0px auto;padding: 25px 5px; background-color: #fff;}
+/*讨论*/
+.topicTl{font-weight: 400;color: #354059;line-height: 40px;font-size: 16px;text-decoration:none;}
+.topicTl:hover{text-decoration: underline;}
+
+/*form style*/
+.form{width: 845px;border-top: 1px solid #dadada;padding:10px 50px;position: relative;}
+.form .tit{position: absolute;left:42%;height: 30px;width: 70px;top: -10px;background: #fff;text-align: center;}
+.form label{color: #111;display: block;font-weight: bold;line-height: 30px;}
+.form input[type="text"],form input[type="password"]{width: 97.5%;margin-bottom: 10px;padding:1% 1%;border: 1px solid #ccc}
+.form textarea{font-size: 14px;border: 0;border-top:3px solid #f2f2f2;outline:1px solid #ccc;overflow-y:hidden;width: 97.5%;margin-bottom: 10px;padding:1% 1%;height: 160px;}
+.reg-login{max-width: 300px;margin: auto;}
+.reg-login .input{height: 25px;}
+.reg-login .reg-tip{height: 30px;line-height: 30px;font-size: 14px;}
+.reg-login .reg-tip a{text-decoration: underline; color: #666;}
+/* 用户空间 */
+.user-bg{background: url(bg.jpg) ;}
+.user-card{_width: 300px;max-width: 300px;margin: 70px auto;border: 1px solid #ededed;background: #fff;}
+.user-card .card-top{width: 100%;background: #354059;padding: 30px 0;text-align: center;color: #fff;}
+.user-card .card-top .card-avatar{width: 100px;height: 100px;border-radius: 50px;}
+.user-card .card-top .card-nickname{height: 30px;line-height: 30px;color: #fff;font-size: 14px;font-weight: bold;}
+.user-card .card-info{padding: 20px 0;display: block;}
+.user-card .card-info li{color: #999;font-size: 14px;}
+.user-card .card-info .card-lable{border-bottom:1px solid #eee;width: 90%;margin-left: 10%}
+.user-card .card-info .card-profile{padding: 10px 0;width: 90%;margin-left: 10%;}
+.user-card .card-info .card-profile span{color: #333;font-size: 14px;margin-right: 10px;}
+

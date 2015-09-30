@@ -1,0 +1,125 @@
+.topbox
+{
+	width:auto;height:auto;
+	background:#5CA223;
+}
+.topbox .top
+{
+	width:1000px;
+	height:47px;
+	line-height:47px;
+	margin:0 auto;
+	color:#FFFFFF;
+}
+.topbox .top .left
+{
+	float:left;
+	width:auto;
+	height:auto;
+	font-size:20px;
+	font-weight:bold;
+}
+.topbox .top .right
+{
+	float:right;
+	width:auto;
+	height:auto;
+	font-size:14px;
+}
+
+.pathbox
+{
+	width:auto;height:auto;
+	background:#333333;
+}
+.pathbox .title
+{
+	width:1000px;
+	height:22px;
+	line-height:22px;
+	margin:0 auto;
+	color:#FFFFFF;
+	font-size:13px;
+}
+
+.title_border
+{
+	margin:0 auto;
+	width:980px;
+	heght:auto;
+	background:#FFFFFF;
+	border-left:10px solid #A0B557;
+	border-right:10px solid #A0B557;
+	border-bottom:10px solid #A0B557;
+	color:#ffffff;
+}
+
+.title_border .titlebox
+{
+	background:#EFEFEF;
+	width:auto;
+	height:auto;
+}
+.title_border .title
+{
+	padding:5px;
+	font-weight:bold;
+	font-size:20px;
+	background:#EC7B25;
+	width:150px;
+	height:50px;
+	line-height:50px;
+}
+
+.nemubox
+{
+	background:#469A67;
+	width:auto;
+	height:45px;
+	overflow:hidden;
+}
+
+.nemubox a
+{
+	padding:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:15px;
+	margin-bottom:5px;
+	margin-top:0px;
+	height:auto;
+	background:#A0B557;
+	display: inline-block;
+	*display: inline;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:16px;
+}
+.nemubox a:hover {background:#ffffff;color:#EC7B25;}
+
+.nemubox .in
+{
+	margin-bottom:0px;
+	background:#ffffff;color:#EC7B25;
+	position:absolute;
+	height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
