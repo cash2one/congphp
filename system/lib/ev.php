@@ -8,11 +8,12 @@ class ev
 	public $url;
 	public $G;
 	private $e;
+    public $directory;
 
 	public function __construct(&$G)
     {
     	$this->G = $G;
-    	$this->strings = $this->G->make('strings');
+    	$this->strings =& load_class('strings');
     	if (ini_get('magic_quotes_gpc')) {
 			$get    = $this->stripSlashes($_REQUEST);
 			$post   = $this->stripSlashes($_POST);
@@ -26,7 +27,7 @@ class ev
 		$this->file = $_FILES;
 		$this->get = $this->initData($get);
 		$this->post = $this->initData($post);
-		$this->url = $this->parseUrl();
+		$this->url = $this->router();
 		$this->cookie = $this->initData($this->cookie);
     }
 
@@ -43,8 +44,108 @@ class ev
 			$tp = explode('&',$tmp[0],2);
 			return explode('-',$tp[0]);
 		}
-		else return false;
+		else
+            return false;
 	}
+
+    public function router()
+    {
+        $uri    =   explode( '/', strtolower($this->_parse_request_uri()));
+        return $uri;
+//
+//        array_shift($uri);
+//        $class  = strtolower(array_shift($uri));
+//        $method = strtolower(array_shift($uri));
+//        $var    = strtolower(array_shift($uri));
+    }
+
+    protected function _parse_request_uri()
+    {
+        if ( ! isset($_SERVER['REQUEST_URI'], $_SERVER['SCRIPT_NAME']))
+        {
+            return '';
+        }
+
+        // parse_url() returns false if no host is present, but the path or query string
+        // contains a colon followed by a number
+        $uri = parse_url('http://dummy'.$_SERVER['REQUEST_URI']);
+        $query = isset($uri['query']) ? $uri['query'] : '';
+        $uri = isset($uri['path']) ? $uri['path'] : '';
+
+        if (isset($_SERVER['SCRIPT_NAME'][0]))
+        {
+            if (strpos($uri, $_SERVER['SCRIPT_NAME']) === 0)
+            {
+                $uri = (string) substr($uri, strlen($_SERVER['SCRIPT_NAME']));
+            }
+            elseif (strpos($uri, dirname($_SERVER['SCRIPT_NAME'])) === 0)
+            {
+                $uri = (string) substr($uri, strlen(dirname($_SERVER['SCRIPT_NAME'])));
+            }
+        }
+
+        // This section ensures that even on servers that require the URI to be in the query string (Nginx) a correct
+        // URI is found, and also fixes the QUERY_STRING server var and $_GET array.
+        if (trim($uri, '/') === '' && strncmp($query, '/', 1) === 0)
+        {
+            $query = explode('?', $query, 2);
+            $uri = $query[0];
+            $_SERVER['QUERY_STRING'] = isset($query[1]) ? $query[1] : '';
+        }
+        else
+        {
+            $_SERVER['QUERY_STRING'] = $query;
+        }
+
+        parse_str($_SERVER['QUERY_STRING'], $_GET);
+
+        if ($uri === '/' OR $uri === '')
+        {
+            return '/';
+        }
+
+        // Do some final cleaning of the URI and return it
+        return $this->_remove_relative_directory($uri);
+    }
+
+    protected function _parse_query_string()
+    {
+        $uri = isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : @getenv('QUERY_STRING');
+
+        if (trim($uri, '/') === '')
+        {
+            return '';
+        }
+        elseif (strncmp($uri, '/', 1) === 0)
+        {
+            $uri = explode('?', $uri, 2);
+            $_SERVER['QUERY_STRING'] = isset($uri[1]) ? $uri[1] : '';
+            $uri = $uri[0];
+        }
+
+        parse_str($_SERVER['QUERY_STRING'], $_GET);
+
+        return $this->_remove_relative_directory($uri);
+    }
+
+    protected function _remove_relative_directory($uri)
+    {
+        $uris = array();
+        $tok = strtok($uri, '/');
+        while ($tok !== FALSE)
+        {
+            if (( ! empty($tok) OR $tok === '0') && $tok !== '..')
+            {
+                $uris[] = $tok;
+            }
+            $tok = strtok('/');
+        }
+
+        return implode('/', $uris);
+    }
+
+
+
 
     //返回$_REQUEST数组内的值
     public function get($par)
@@ -64,8 +165,10 @@ class ev
     public function url($par)
     {
     	$par = intval($par);
-    	if(isset($this->url[$par]))return $this->url[$par];
-    	else return false;
+    	if(isset($this->url[$par]))
+            return $this->url[$par];
+    	else
+            return false;
     }
 
 	//设置COOKIE

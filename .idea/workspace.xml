@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="985e55ce-41c9-42cb-a7b0-16070d923b10" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Common.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/GouPHP.php" />
+      <change type="DELETED" beforePath="D:\WWW\congphp\controller\a.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/lib/ev.class.php" afterPath="$PROJECT_DIR$/system/lib/ev.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/welcome.php" afterPath="$PROJECT_DIR$/controller/welcome.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\alipay.cls.php" afterPath="$PROJECT_DIR$/system/lib/alipay.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\api.cls.php" afterPath="$PROJECT_DIR$/system/lib/api.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\application.class.php" afterPath="$PROJECT_DIR$/system/lib/application.class.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\ca.cls.php" afterPath="$PROJECT_DIR$/system/lib/ca.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\category.cls.php" afterPath="$PROJECT_DIR$/system/lib/category.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\cnf.cls.php" afterPath="$PROJECT_DIR$/system/lib/cnf.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\config.inc.php" afterPath="$PROJECT_DIR$/system/lib/config.inc.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\db.cls.php" afterPath="$PROJECT_DIR$/system/lib/db.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\editor.cls.php" afterPath="$PROJECT_DIR$/system/lib/editor.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\ev.class.php" afterPath="$PROJECT_DIR$/system/lib/ev.class.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\files.cls.php" afterPath="$PROJECT_DIR$/system/lib/files.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\ftp.cls.php" afterPath="$PROJECT_DIR$/system/lib/ftp.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\gd.cls.php" afterPath="$PROJECT_DIR$/system/lib/gd.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\gms.cls.php" afterPath="$PROJECT_DIR$/system/lib/gms.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\html.cls.php" afterPath="$PROJECT_DIR$/system/lib/html.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\http.cls.php" afterPath="$PROJECT_DIR$/system/lib/http.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\include\alipay.func.php" afterPath="$PROJECT_DIR$/system/lib/include/alipay.func.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\include\alipay_notify.class.php" afterPath="$PROJECT_DIR$/system/lib/include/alipay_notify.class.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\include\alipay_submit.class.php" afterPath="$PROJECT_DIR$/system/lib/include/alipay_submit.class.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\include\php_serial.class.php" afterPath="$PROJECT_DIR$/system/lib/include/php_serial.class.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\include\sphinxapi.php" afterPath="$PROJECT_DIR$/system/lib/include/sphinxapi.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\module.cls.php" afterPath="$PROJECT_DIR$/system/lib/module.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\pdosql.cls.php" afterPath="$PROJECT_DIR$/system/lib/pdosql.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\pepdo.cls.php" afterPath="$PROJECT_DIR$/system/lib/pepdo.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\pg.cls.php" afterPath="$PROJECT_DIR$/system/lib/pg.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\session.cls.php" afterPath="$PROJECT_DIR$/system/lib/session.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\smtp.cls.php" afterPath="$PROJECT_DIR$/system/lib/smtp.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\sphinx.cls.php" afterPath="$PROJECT_DIR$/system/lib/sphinx.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\sql.cls.php" afterPath="$PROJECT_DIR$/system/lib/sql.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\strings.cls.php" afterPath="$PROJECT_DIR$/system/lib/strings.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\tpl.class.php" afterPath="$PROJECT_DIR$/system/lib/tpl.class.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\wechat.cls.php" afterPath="$PROJECT_DIR$/system/lib/wechat.cls.php" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib\include" afterPath="$PROJECT_DIR$/system/lib/include" />
+      <change type="MOVED" beforePath="D:\WWW\congphp\lib" afterPath="$PROJECT_DIR$/system/lib" />
+    </list>
+    <ignored path="congphp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="congphp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="welcome.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/welcome.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="27" selection-start="214" selection-end="214" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="399">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ftp.cls.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/lib/ftp.cls.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="22.392857" vertical-offset="627" max-vertical-offset="4902">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/core/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="46" selection-start="288" selection-end="335" vertical-scroll-proportion="-8.678572" vertical-offset="80" max-vertical-offset="513">
+              <folding>
+                <element signature="e#6#99#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/lib/application.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="34" selection-start="33" selection-end="110" vertical-scroll-proportion="76.0" vertical-offset="2166" max-vertical-offset="3496">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ca.cls.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/lib/ca.cls.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GouPHP.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/core/GouPHP.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="231" selection-end="282" vertical-scroll-proportion="-5.964286" vertical-offset="61" max-vertical-offset="399">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ev.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/lib/ev.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="48" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.5079872" vertical-offset="886" max-vertical-offset="3819">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Common.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/core/Common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="31" selection-start="1955" selection-end="1971" vertical-scroll-proportion="-5.964286" vertical-offset="1087" max-vertical-offset="1881">
+              <folding>
+                <element signature="e#6#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="362" selection-end="558" vertical-scroll-proportion="-1.8928572" vertical-offset="346" max-vertical-offset="1254">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tpl.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/lib/tpl.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="11" selection-start="461" selection-end="482" vertical-scroll-proportion="-11.535714" vertical-offset="171" max-vertical-offset="7391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/lib/base_controller.php" />
+        <option value="$PROJECT_DIR$/controller/base_controller.php" />
+        <option value="$PROJECT_DIR$/system/Common.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/system/GouPHP.php" />
+        <option value="$PROJECT_DIR$/system/core/base_controller.php" />
+        <option value="$PROJECT_DIR$/controller/welcome.php" />
+        <option value="$PROJECT_DIR$/system/core/Controller.php" />
+        <option value="$PROJECT_DIR$/system/core/GouPHP.php" />
+        <option value="$PROJECT_DIR$/system/lib/ev.class.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <option name="servers">
+      <server host="localhost" name="Unnamed" />
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="13" />
+    <option name="y" value="10" />
+    <option name="width" value="1349" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congphp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="Configurable.PHP.Debug.DBGPProxy" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\congphp\system\core" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WWW\congphp\system\core" />
+      <recent name="D:\WWW\congphp\system" />
+      <recent name="D:\WWW\congphp\controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\liujuncong\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\WWW\congphp" />
+          <option name="myCopyRoot" value="D:\WWW\congphp" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\WWW\congphp" />
+          <option name="myCopyRoot" value="D:\WWW\congphp" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="985e55ce-41c9-42cb-a7b0-16070d923b10" name="Default" comment="" />
+      <created>1443616825014</created>
+      <updated>1443616825014</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="13" y="10" width="1349" height="728" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46116504" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/index.php</url>
+          <line>8</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="553" selection-end="602" vertical-scroll-proportion="8.392858" vertical-offset="425" max-vertical-offset="988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/lib/tpl.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="11" selection-start="461" selection-end="482" vertical-scroll-proportion="-11.535714" vertical-offset="171" max-vertical-offset="7391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/lib/ca.cls.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/lib/cnf.cls.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="27" selection-start="214" selection-end="214" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/lib/ftp.cls.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="22.392857" vertical-offset="627" max-vertical-offset="4902">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="46" selection-start="288" selection-end="335" vertical-scroll-proportion="-8.678572" vertical-offset="80" max-vertical-offset="513">
+          <folding>
+            <element signature="e#6#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="31" selection-start="1955" selection-end="1971" vertical-scroll-proportion="-5.964286" vertical-offset="1087" max-vertical-offset="1881">
+          <folding>
+            <element signature="e#6#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/lib/application.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="33" selection-end="110" vertical-scroll-proportion="76.0" vertical-offset="2166" max-vertical-offset="3496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/GouPHP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="231" selection-end="282" vertical-scroll-proportion="-5.964286" vertical-offset="61" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="362" selection-end="558" vertical-scroll-proportion="-1.8928572" vertical-offset="346" max-vertical-offset="1254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/lib/ev.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="48" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.5079872" vertical-offset="886" max-vertical-offset="3819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

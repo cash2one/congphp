@@ -1,4 +1,23 @@
 <?php
+
+define('WEBROOT', str_replace('\\', '/', dirname(__FILE__)));
+
+define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+// 系统类的根路径
+define('BASEPATH', WEBROOT."/system/");
+// 视图根路径
+define('VIEWPATH', WEBROOT."/view/");
+// 控制器根路径
+define('CONTROLLERPATH', WEBROOT."/controller/");
+// 数据模型根路径
+define('MODELPATH', WEBROOT."/model/");
+
+require_once BASEPATH.'core/GouPHP.php';
+exit;
+?>
+
+
+<?php
 define("_VERSION_",'0.0.1');
 require "lib/application.class.php";
 

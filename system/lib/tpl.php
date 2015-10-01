@@ -15,12 +15,13 @@ class tpl
     {
     	$this->G = $G;
 
-    	$this->fl = $this->G->make('files');
-    	$this->ev = $this->G->make('ev');
+    	$this->fl =& load_class('files');
+    	$this->ev =& load_class('ev');
 
     	if($this->ev->url(1))
-    	$this->dir = $this->G->app.'/tpls/'.$this->ev->url(1).'/';
-    	else $this->dir = $this->G->app.'/tpls/app/';
+    	    $this->dir = VIEWPATH.$this->ev->url(1).'/';
+    	else
+            $this->dir = VIEWPATH;
     }
 
     //设置缓存事件

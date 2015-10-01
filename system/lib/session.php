@@ -9,11 +9,11 @@ class session
     public function __construct(&$G)
     {
     	$this->G = $G;
-    	$this->db = $this->G->make("pepdo");
-    	$this->ev = $this->G->make("ev");
-    	$this->pdosql = $this->G->make("pdosql");
-    	$this->sql = $this->G->make("sql");
-    	$this->strings = $this->G->make("strings");
+    	$this->db =& load_class("pepdo");
+    	$this->ev =& load_class("ev");
+    	$this->pdosql =& load_class("pdosql");
+    	$this->sql =& load_class("sql");
+    	$this->strings =& load_class("strings");
     	$this->sessionid = $this->getSessionId();
     }
 
@@ -21,7 +21,8 @@ class session
     public function getSessionId()
     {
     	if(!$this->sessionid)
-    	$this->sessionid = $this->ev->getCookie('psid');
+    	    $this->sessionid = $this->ev->getCookie('psid');
+
     	if(!$this->sessionid)
     	{
     		session_start();
@@ -49,11 +50,13 @@ class session
     			$randCode .= $array[intval(rand(0,35))];
 	    	}
     	}
-    	if(!$this->sessionid)$this->getSessionId();
+    	if(!$this->sessionid)
+            $this->getSessionId();
     	$data = array('session',array('sessionrandcode'=>$randCode),array(array("AND","sessionid = :sessionid",'sessionid',$this->sessionid)));
 	    $sql = $this->pdosql->makeUpdate($data);
     	$r = $this->db->exec($sql);
-    	if($r)return $randCode;
+    	if($r)
+            return $randCode;
     	else
     	{
     		$data = array('session',array('sessionid'=>$this->sessionid,'sessionuserid'=>0,'sessionip'=>$this->ev->getClientIp()));
@@ -78,7 +81,8 @@ class session
     {
     	if(!$sessionid)
     	{
-    		if(!$this->sessionid)$this->getSessionId();
+    		if(!$this->sessionid)
+                $this->getSessionId();
     		$sessionid = $this->sessionid;
     	}
     	$data = array(false,'session',array(array('AND',"sessionid = :sessionid",'sessionid',$this->sessionid)));
@@ -89,7 +93,8 @@ class session
     //设置会话用户信息
     public function setSessionUser($args = NULL)
     {
-    	if(!$args)return false;
+    	if(!$args)
+            return false;
     	else
     	{
 	    	if(!$args['sessiontimelimit'])$args['sessiontimelimit'] = TIME;
@@ -110,10 +115,12 @@ class session
     //设置会话中其他信息
     public function setSessionValue($args = NULL)
     {
-		if(!$args)return false;
+		if(!$args)
+            return false;
     	else
     	{
-	    	if(!$this->sessionid)$this->getSessionId();
+	    	if(!$this->sessionid)
+                $this->getSessionId();
 	    	$data = array('session',$args,array(array('AND',"sessionid = :sessionid",'sessionid',$this->sessionid)));
 	    	$sql = $this->pdosql->makeUpdate($data);
 	    	$this->db->exec($sql);
@@ -124,7 +131,8 @@ class session
     //获取会话用户
     public function getSessionUser()
     {
-    	if($this->sessionuser)return $this->sessionuser;
+    	if($this->sessionuser)
+            return $this->sessionuser;
     	$cookie = $this->strings->decode($this->ev->getCookie($this->sessionname));
     	if(!$cookie && $this->ev->get(CH.'currentuser') && $this->ev->get(CH.'psid'))
     	{
@@ -147,7 +155,7 @@ class session
     		}
     		else
     		{
-    			$user = $this->G->make('user','user')->getUserById($cookie['sessionuserid']);
+    			$user =& load_class('user','user')->getUserById($cookie['sessionuserid']);
     			if($cookie['sessionpassword'] == $user['userpassword'])
     			{
 					$this->sessionid = $cookie['sessionid'];
@@ -164,7 +172,8 @@ class session
     //清除会话用户
     public function clearSessionUser()
     {
-    	if(!$this->sessionid)$this->getSessionId();
+    	if(!$this->sessionid)
+            $this->getSessionId();
     	$this->ev->setCookie($this->sessionname,NULL);
     	$data = array('session',array(array('AND',"sessionid = :sessionid",'sessionid',$this->sessionid)));
 		$sql = $this->pdosql->makeDelete($data);
