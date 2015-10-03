@@ -7,21 +7,15 @@ class tpl
 	private $isCache = 1;
 	private $cacheTime = 300;
 
-	public $G;
 	public $dir;
 	public $cacheDir;
 
-	public function __construct(&$G)
+	public function __construct()
     {
-    	$this->G = $G;
-
     	$this->fl =& load_class('files');
     	$this->ev =& load_class('ev');
 
-    	if($this->ev->url(1))
-    	    $this->dir = VIEWPATH.$this->ev->url(1).'/';
-    	else
-            $this->dir = VIEWPATH;
+        $this->dir = VIEWPATH;
     }
 
     //设置缓存事件
@@ -37,7 +31,9 @@ class tpl
     	if(is_array($vars))
     	{
     		foreach($vars as $key => $cnt)
-    		$this->tpl_var[$target][$key] = $vars[$key];
+            {
+                $this->tpl_var[$target][$key] = $vars[$key];
+            }
     	}
     	else
     	{
@@ -77,7 +73,7 @@ class tpl
 	//判断是否缓存
 	public function isCached($file,$par = NULL,$cachename = NULL)
 	{
-		$source = 'app/'.$this->dir.$file.'.tpl';
+		$source = $this->dir.$file.'.php';
     	$outfile = 'data/compile/'.$this->dir.'%%cpl%%'.$file.'.php';
     	if($cachename)$outcache = 'data/html/'.$this->dir.$cachename.'.html';
 		else
@@ -158,8 +154,10 @@ class tpl
 
 	public function _compileInclude($file)
 	{
-		if($file)$this->fetch($file,NULL,0);
-		if($this->isCache)include 'data/compile/'.$this->dir.'/%%cpl%%'.$file.'.php';
+		if($file)
+            $this->fetch($file,NULL,0);
+		if($this->isCache)
+            include 'data/compile/'.$this->dir.'/%%cpl%%'.$file.'.php';
 	}
 
 	public function compileRealVar(&$content)
@@ -321,12 +319,12 @@ class tpl
 	public function fetch($file,$par='',$type = 0,$cachename = NULL)
     {
     	$this->initFile();
-    	$source = 'app/'.$this->dir.$file.'.tpl';
-    	$outfile = 'data/compile/'.$this->dir.'%%cpl%%'.$file.'.php';
+    	$source = $this->dir.$file.'.php';
+    	$outfile = WEBPATH.'data/compile/'.'%%cpl%%'.$file.'.php';
 		if($cachename)
-            $outcache = 'data/html/'.$this->dir.$cachename.'.html';
+            $outcache = WEBPATH.'data/html/'.$cachename.'.html';
 		else
-    	    $outcache = 'data/html/'.$this->dir.$file.$par.'.html';
+    	    $outcache = WEBPATH.'data/html/'.$file.$par.'.html';
     	if((!file_exists($outfile)) || (filemtime($outfile) < filemtime($source)))
     	{
 			$content = $this->compileTpl($source);
@@ -379,6 +377,12 @@ class tpl
     public function display($file,$par=NULL,$cachename = NULL)
     {
     	$this->fetch($file,$par,1,$cachename);
+    }
+
+    //展示模板
+    public function view($file,$par=NULL,$cachename = NULL)
+    {
+        $this->fetch($file,$par,1,$cachename);
     }
 }
 

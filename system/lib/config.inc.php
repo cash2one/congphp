@@ -14,9 +14,9 @@ else
 define('WP','http://'.$_SERVER['SERVER_NAME']);
 
 define('DB','szjy');//MYSQL数据库名
-define('DH','192.168.1.236');//MYSQL主机名，不用改
+define('DH','127.0.0.1');//MYSQL主机名，不用改
 define('DU','root');//MYSQL数据库用户名
 define('DP','root');//MYSQL数据库用户密码
-define('DTH','jy_');//系统表前缀，不用改
+define('DTH','gou_');//系统表前缀，不用改
 
 ?>

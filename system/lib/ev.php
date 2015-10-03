@@ -8,11 +8,10 @@ class ev
 	public $url;
 	public $G;
 	private $e;
-    public $directory;
+    public $directory=null;
 
-	public function __construct(&$G)
+	public function __construct()
     {
-    	$this->G = $G;
     	$this->strings =& load_class('strings');
     	if (ini_get('magic_quotes_gpc')) {
 			$get    = $this->stripSlashes($_REQUEST);
@@ -28,6 +27,15 @@ class ev
 		$this->get = $this->initData($get);
 		$this->post = $this->initData($post);
 		$this->url = $this->router();
+        $this->class = $this->url(0);
+        if(!$this->class) {
+            $this->class = "welcome";
+        }
+        $this->method = $this->url(1);
+        if(!$this->method) {
+            $this->method = "index";
+        }
+        $this->params = array_slice($this->url,2);
 		$this->cookie = $this->initData($this->cookie);
     }
 

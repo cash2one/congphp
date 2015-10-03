@@ -10,7 +10,7 @@ class pdosql
     public function __construct(&$G)
     {
     	$this->G = $G;
-    	$this->ev = $this->G->make('ev');
+    	$this->ev =& load_class('ev');
     }
 
 	public function __destruct()

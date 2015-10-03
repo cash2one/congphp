@@ -18,11 +18,11 @@ class cnf
     {
     	if((!isset($this->config[$app])) || (!is_array($this->config[$app])))
     	{
-    		$ca = $this->G->make('ca');
+    		$ca =& load_class('ca');
 			if($ca->isTimeOut($app,3600))
 			{
 				$sql = "SELECT * FROM `".$this->table."` WHERE module = '{$app}'";
-	    		$tmp = $this->G->make('db')->fetchAll(1,$sql);
+	    		$tmp =& load_class('db')->fetchAll(1,$sql);
 				foreach($tmp as $p)
 				{
 					$this->config[$app][$p['name']] = $p['value'];

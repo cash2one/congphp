@@ -14,7 +14,7 @@
     public function __construct(&$G)
     {
     	$this->G = $G;
-    	$this->sql = $this->G->make('pdosql');
+    	$this->sql =& load_class('pdosql');
     }
 
     public function connect($host = DH,$dbuser = DU,$password = DP,$dbname = DB,$dbcode = HE)
@@ -168,7 +168,7 @@
     public function listElements($page,$number = 20,$args,$tablepre = DTH)
 	{
 		if(!is_array($args))return false;
-		$pg = $this->G->make('pg');
+		$pg =& load_class('pg');
 		$page = $page > 0?$page:1;
 		$r = array();
 		$data = array($args['select'],$args['table'],$args['query'],$args['groupby'],$args['orderby'],array(intval($page-1)*$number,$number));

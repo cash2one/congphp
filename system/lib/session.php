@@ -6,9 +6,8 @@ class session
 	public $sessionname = 'currentuser';
 	public $sessionuser = false;
 
-    public function __construct(&$G)
+    public function __construct()
     {
-    	$this->G = $G;
     	$this->db =& load_class("pepdo");
     	$this->ev =& load_class("ev");
     	$this->pdosql =& load_class("pdosql");

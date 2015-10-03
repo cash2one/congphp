@@ -18,11 +18,11 @@ class module
 
 	public function _init()
 	{
-		$this->sql = $this->G->make('sql');
-		$this->pdosql = $this->G->make('pdosql');
-		$this->db = $this->G->make('pepdo');
-		$this->pg = $this->G->make('pg');
-		$this->ev = $this->G->make('ev');
+		$this->sql =& load_class('sql');
+		$this->pdosql =& load_class('pdosql');
+		$this->db =& load_class('pepdo');
+		$this->pg =& load_class('pg');
+		$this->ev =& load_class('ev');
 	}
 
 	//查询模型

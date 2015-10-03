@@ -11,7 +11,7 @@ class db2
     public function __construct(&$G)
     {
     	$this->G = $G;
-    	$this->sql = $this->G->make('sql');
+    	$this->sql =& load_class('sql');
     }
 
 	//获取MYSQL版本信息
@@ -144,7 +144,7 @@ class db2
     public function listElements($page,$number = 20,$args,$type = 1)
 	{
 		if(!is_array($args))return false;
-		$pg = $this->G->make('pg');
+		$pg =& load_class('pg');
 		$page = $page > 0?$page:1;
 		$r = array();
 		$data = array($args['select'],$args['table'],$args['query'],$args['groupby'],$args['orderby'],array(intval($page-1)*$number,$number));

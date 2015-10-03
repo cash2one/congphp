@@ -9,7 +9,7 @@ class ca
     public function __construct(&$G)
     {
     	$this->G = $G;
-    	$this->fl = $this->G->make('fl');
+    	$this->fl =& load_class('fl');
     }
 
     public function readCache($cache,$dir = 'system')
